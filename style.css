@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.card-container {
+    width: 384px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 24px;
+    font-family: "Outfit", sans-serif;
+    border: 1.5px solid black;
+    box-shadow: black 10px 10px;
+}
+
+.img-container {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.learning-tag {
+    background-color: #F4D04E;
+    color: hsl(0, 0%, 7%);
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.learning-tag:hover {
+    box-shadow: 0 5px 5px rgb(156, 154, 154);
+    cursor: pointer;
+}
+
+.publish-date {
+    margin-bottom: 15px;
+}
+
+.title-container {
+    margin-bottom: 24px;
+}
+h1 {
+    font-size: 24px;
+}
+
+h1:hover {
+    color: #F4D04E;
+    cursor: pointer;
+}
+
+.desc-container {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+    line-height: 25px;
+}
+
+.author-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.author-container img {
+    width: 40px;
+}
+
+@media only screen and (max-width: 375px) {
+    .card-container {
+        width: 327px;
+    }
+}
